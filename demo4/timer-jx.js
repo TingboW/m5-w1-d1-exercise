@@ -18,6 +18,7 @@ class Timer extends React.Component {
       clearInterval(this.interval);
     }
   
+    //Rendering with jsx
     render() {
       return (
         <div>
@@ -26,6 +27,18 @@ class Timer extends React.Component {
       );
     }
 }
+
+  //Rendering without jsx
+  /* render() {
+    return React.createElement(
+      'div',
+      null,
+      'Seconds: ',
+      this.state.seconds
+    );
+  } */
+
+
   
   ReactDOM.render(
     <Timer />,
